@@ -1,8 +1,5 @@
 # Realtime_Chat_App
 
-```markdown
-# Real-Time Chat Application
-
 A simple real-time chat application built with Node.js and Socket.IO.
 
 ## Table of Contents
