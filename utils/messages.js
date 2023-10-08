@@ -1,8 +1,8 @@
 import moment from 'moment';
 
-function messageFormat(username, msg) {
+function messageFormat(username, text) {
     return {
-        username, text: msg, time: moment().format("LT")
+        username, text, time: moment().format("LT")
     };
 }
 
