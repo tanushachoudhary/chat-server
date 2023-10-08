@@ -26,7 +26,7 @@ This real-time chat application allows users to join different chat rooms and ex
 1. Clone this repository:
 
    ```bash
-   git clone [https://github.com/yourusername/real-time-chat-app.git](https://github.com/BishoySedra/Realtime_Chat_App.git)
+   git clone https://github.com/yourusername/real-time-chat-app.git
    ```
 
 2. Change to the project directory:
