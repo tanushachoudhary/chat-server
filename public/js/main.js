@@ -35,13 +35,13 @@ chat_form.addEventListener("submit", (e) => {
     // get message content
     const msg = e.target.elements.msg.value;
 
+    socket.emit("chat-message", msg);
     // input validation
-    if (validateInput(msg)) {
+   // if (validateInput(msg)) {
         // send message to server
-        socket.emit("chat-message", msg);
-    } else {
-        alert("Please enter a valid message!");
-    }
+   // } else {
+    //    alert("Please enter a valid message!");
+   // }
 
     // empty input after submit
     e.target.elements.msg.value = "";
@@ -75,7 +75,7 @@ function outputUserList(users) {
     `;
 }
 
-function validateInput(message) {
-    const pattern = /^[a-zA-Z0-9_]+$/;
-    return pattern.test(message);
-}
+//function validateInput(message) {
+//    const pattern = /^[a-zA-Z0-9_]+$/;
+//    return pattern.test(message);
+//}
