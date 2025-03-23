@@ -1,15 +1,9 @@
-# Realtime_Chat_App
+# Realtime_Chat_Application
 
 A simple real-time chat application built with Node.js and Socket.IO.
+![image](https://github.com/user-attachments/assets/0c87c5c3-8453-4bff-ae37-599972bdfe8d)
+![image](https://github.com/user-attachments/assets/93f37f63-aaff-43e7-acf3-15d235db9c16)
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
 
 ## Overview
 
@@ -53,9 +47,7 @@ This real-time chat application allows users to join different chat rooms and ex
 
 3. Choose a username and a chat room to join, and start chatting in real-time.
 
-## Configuration
 
-Before running the application, you may customize the server configuration in the `.env` file.
 
 ```plaintext
 # Server Configuration
