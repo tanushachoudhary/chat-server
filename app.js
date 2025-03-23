@@ -21,23 +21,15 @@ io.on("connection", socket => {
 
     // when user joined
     socket.on("user-join", ({ username, room }) => {
-        // create user object
         const user = userMethods.joinUser(socket.id, username, room);
-
-        // to specify a target room
         socket.join(user.room);
-
-        // when current user connects
-        socket.emit("message", messageFormat(chatBotName, "Welcome to chat!"));
-
-        // when another user connects
-        socket.broadcast
-            .to(user.room)
-            .emit("message", messageFormat(chatBotName, `${username} has Joined the chat!`));
-
-        // send room name & room users
+    
+        socket.emit("message", messageFormat("ChatBot", "Welcome to the chat!"));
+        socket.broadcast.to(user.room).emit("message", messageFormat("ChatBot", `${username} has joined the room!`));
+    
         io.to(user.room).emit("room-users", { room: user.room, users: userMethods.roomUsers(user.room) });
     });
+    
 
 
     // when chat message received
