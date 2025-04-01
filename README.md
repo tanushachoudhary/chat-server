@@ -54,4 +54,3 @@ This real-time chat application allows users to join different chat rooms and ex
 SERVER_PORT=3000
 ```
 
-**Important:** Make sure to rename the `.example.env` file to `.env` and fill it with your specific configuration values.
