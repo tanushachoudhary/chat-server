@@ -1,4 +1,4 @@
-# Realtime_Chat_Application
+# Chat_Application
 
 A simple real-time chat application built with Node.js and Socket.IO.
 ![image](https://github.com/user-attachments/assets/0c87c5c3-8453-4bff-ae37-599972bdfe8d)
